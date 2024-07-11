@@ -3,29 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Aranya Saha's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/1500x400') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+        }
+        .content h2 {
+            color: #333;
+        }
+        .content p, .content ul {
+            margin: 0;
+            padding: 0 0 10px 0;
+        }
+        .content ul {
+            list-style: none;
+        }
+        .content ul li {
+            padding-left: 1em;
+            text-indent: -.7em;
+        }
+        .content ul li:before {
+            content: "• ";
+            color: #333;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Aranya Saha</h1>
+        <div class="container">
+            <div id="branding">
+                <h1>Aranya Saha</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#academic">Academic</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#extra-curricular">Extra-Curricular</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>This is where you can write a brief bio about yourself.</p>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>BSc in Electrical and Electronic Engineering (EEE) | Major: Communication and Signal Processing (CSP)</p>
+        </div>
+    </section>
+
+    <div class="container content">
+        <section id="academic">
+            <h2>Academic Qualification</h2>
+            <p><strong>BSc in Electrical and Electronic Engineering (EEE)</strong> (Expected 2024)</p>
+            <p>Bangladesh University of Engineering and Technology (BUET)</p>
+            <p>Major: Communication and Signal Processing (CSP)</p>
+            <p>CGPA: 3.86/4.00 (Without Final Semester)</p>
+            <p><strong>Higher Secondary School Certificate (HSC)</strong> (2019)</p>
+            <p>Notre Dame College</p>
+            <p>GPA: 5.00/5.00</p>
+            <p><strong>Secondary School Certificate (SSC)</strong> (2017)</p>
+            <p>Rajuk Uttara Model College</p>
+            <p>GPA: 5.00/5.00</p>
         </section>
-        <section>
-            <h2>Projects</h2>
+
+        <section id="skills">
+            <h2>Skills</h2>
             <ul>
-                <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-                <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
+                <li>Programming Languages: Python, C, MATLAB</li>
+                <li>Libraries: PyTorch, TensorFlow, Keras, Pandas</li>
+                <li>Circuit Simulation and Design: PSpice, LTSpice, Proteus</li>
+                <li>Others: Word, PowerPoint, Excel</li>
             </ul>
         </section>
-    </main>
+
+        <section id="projects">
+            <h2>Notable Academic Projects</h2>
+            <ul>
+                <li><strong>Skin Cancer Classification using Deep Learning Models:</strong> Implemented deep learning models on skin problem datasets and compared outputs for best accuracies.</li>
+                <li><strong>IoT Based Patient Health Monitoring System:</strong> Developed a system for real-time tracking of vital signs and environmental conditions, with data accessible to patients and healthcare providers.</li>
+                <li><strong>Multi-functional CNC: Pen Plotter, Cutter and Engraver:</strong> Created an Arduino-based CNC machine capable of precise fabric cutting with intricate designs.</li>
+                <li><strong>MATLAB Project on ‘Fingerprint Recognition’:</strong> Implemented fingerprint recognition using MATLAB, involving processes like Enhancement, Binarization, Ridge Thinning, and Minutiae extraction.</li>
+                <li><strong>Designing and Making a 4 Bit ALU (Arithmetic Logic Unit):</strong> Built a 4-bit ALU capable of performing iterative operations without external intervention.</li>
+            </ul>
+        </section>
+
+        <section id="extra-curricular">
+            <h2>Extra-Curricular Activities</h2>
+            <ul>
+                <li>Association for Computing Machinery (ACM) - Student Executive, SIGCOMM</li>
+                <li>BUET Film Society (BFS) - General Member</li>
+                <li>Notre Dame English Club (NDEC) - General Member</li>
+                <li>Notre Dame Photography Club (NDPC) - General Member</li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Dean’s List Award in 1st and 2nd year</li>
+                <li>29th Position in BUET Undergraduate Admission Test</li>
+                <li>31st Position in Dhaka Board with Talent Pool Scholarship in HSC</li>
+                <li>Perfect Attendance Certificate from Notre Dame College</li>
+            </ul>
+        </section>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>Aranya Saha | Email: aranyasaha932@gmail.com | Phone: +8801531531335 | LinkedIn: <a href="https://www.linkedin.com/in/aranya-saha">Aranya Saha</a></p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
